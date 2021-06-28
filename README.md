@@ -1,6 +1,6 @@
 # ReadMe
-Build 
+#Build 
 npm run build 
 
-run 
+#run 
 npm run test 
