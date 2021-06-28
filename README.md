@@ -1,9 +1,19 @@
-# ReadMe
+# puppeteer
 
-#Build 
+## install node_modules
 
+```
+npm install
+```
+
+## Build
+
+```
 npm run build 
+```
 
-#run 
+## Run
 
+```
 npm run test 
+```

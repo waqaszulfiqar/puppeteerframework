@@ -1,0 +1,27 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Credit Card Form Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --timeout=50000 ./build/tests/**.js",
+    "clear": "rd /s /q build",
+    "build": "babel --presey es2015 -d build/ src/"
+  },
+  "keywords": [
+    "puppeteer",
+    "mocha",
+    "framework"
+  ],
+  "author": "Waqas Zulfiqar",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "puppeteer": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
