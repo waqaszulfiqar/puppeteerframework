@@ -29,13 +29,13 @@ describe('Credit card form test:', () => {
 
         console.log('waiting for iframe with form to be ready.');
 
-        // await page.isElementVisible('iframe');
-        // console.log('iframe is ready. Loading iframe content');
-        // const elementHandle = await page.waitForSelector("iframe[id='payment-form']");
-        // const frame = await elementHandle.contentFrame();
+        await page.isElementVisible('iframe');
+        console.log('iframe is ready. Loading iframe content');
+        const elementHandle = await page.waitForSelector("iframe[id='payment-form']");
+        const frame = await elementHandle.contentFrame();
 
-        // console.log('filling form in iframe');
-        // await page.waitFor(6000);
+        console.log('filling form in iframe');
+        await page.waitFor(6000);
         
         
         // const cardType = await frame.$x(`//div[contains(@class, 'css-12kbcej')]//select[@data-elid="card-type"]`);

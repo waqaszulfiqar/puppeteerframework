@@ -85,22 +85,22 @@ export default class CreditCardForm {
 
 
 
-        // await this.page.scrollToBottom(page);
-        // await this.page.waitFor(3000);
-        // await this.page.waitAndClick("#root > div > div.css-16nplrt > form > div > div:nth-child(1) > div > div > div > select");
+        await this.page.scrollToBottom(page);
+        await this.page.waitFor(3000);
+        await this.page.waitAndClick("#root > div > div.css-16nplrt > form > div > div:nth-child(1) > div > div > div > select");
 
-        // const selector = "//#root > div > div.css-16nplrt > form > div > div:nth-child(1) > div > div > div > select";
+        const selector = "//#root > div > div.css-16nplrt > form > div > div:nth-child(1) > div > div > div > select";
 
-        // // scroll selector into view
-        // await this.page.evaluate(selector => {
-        //     const element = document.querySelector(selector);
-        //     if ( element ) {
-        //         element.scrollTop = element.offsetHeight;
-        //         console.error(`Scrolled to selector ${selector}`);
-        //     } else {
-        //         console.error(`cannot find selector ${selector}`);
-        //     }
-        // }, selector);
+        // scroll selector into view
+        await this.page.evaluate(selector => {
+            const element = document.querySelector(selector);
+            if ( element ) {
+                element.scrollTop = element.offsetHeight;
+                console.error(`Scrolled to selector ${selector}`);
+            } else {
+                console.error(`cannot find selector ${selector}`);
+            }
+        }, selector);
 
     }
 
